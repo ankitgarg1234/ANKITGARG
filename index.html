@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Dancing+Script:wght@700&family=Goblin+One&family=Hind+Madurai:wght@300&family=Lobster&family=Reggae+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <style>
+     *{
+            padding:0px;
+            margin:0px;
+        }
+       html{
+           scroll-behavior: smooth;
+       }
+        
+        #header{
+            
+            background-image: linear-gradient( to right bottom,rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url(doc/cover1.jpg);
+            background-size: 100% 100%;
+            width:100vw;
+            background-repeat: no-repeat;
+            height:750px;
+            text-align:justify;
+
+        }
+       
+         #nav{
+             
+             height:80px;
+             color:white;
+             position:relative;
+             z-index:2;
+             
+             
+         }  
+        
+         #logo{
+             float:left;
+             position:fixed;
+             
+             height:120px;
+             
+             z-index:2;
+         }
+         #logo img{
+             position:relative;
+             top:-120px;
+             left:40px;
+
+         }
+        img{
+            position:relative;
+            top:-60px;
+            left:-40px;
+           
+            height:250px;
+        }
+       #menus{
+        background-color: rgba(0,0,0,0.4);
+        float:left;
+        position:fixed;
+        width:100vw;
+           height:80px;
+
+       }
+       #menus ul{
+          
+           margin-top:30px;
+       }
+      ul li {
+           
+           list-style: none;
+           font-weight:bold;
+           float:right;
+           margin-left:1vw;
+           border-right: 2px solid yellow;
+           
+           margin-right:2vw;
+           font-size:16px;
+           
+           
+       }
+       li a{
+        text-decoration:none;
+        color:white;
+        transition:all 0.2s;
+        cursor:pointer;
+        box-shadow: 0px 10px 20px black;
+        
+        
+        
+       }
+        li a:hover{
+            color:goldenrod;
+            
+        }
+        #bcontent{
+            text-align:center;
+        }
+            
+        
+        #content{
+            color:white;
+            font-size:60px;
+            font-weight: 400;
+            
+            width:600px;
+            letter-spacing: 30px;
+            margin:0px auto;
+            margin-top:200px;
+            margin-bottom:10px;
+            
+            font-family: 'Cabin', sans-serif;
+            transition: all 1s;
+            animation: up 2s;
+            text-align:center;
+            position: relative;
+            right:-10px;
+        }
+        #content:hover{
+            color:goldenrod;
+           
+            transform:scale(1.6);}
+         
+       
+        
+        #subtitle{
+            color:white;
+            margin:0px auto;
+            width:600px;
+            height:30px;
+            margin-top:0px;
+            letter-spacing: 6.8px;
+            transition: all 1s;
+            animation: down 2s;
+            box-sizing: border-box;
+            font-size:20px;
+            
+            margin-bottom:2vw;
+           
+            text-align:center;
+           
+           
+        }
+      #subtitle:hover{
+         
+          color:goldenrod;
+          transform:scale(1.6);
+          
+      }
+       
+       .button{
+           background-color:white;
+           color:black;
+           border-radius:100px;
+           height:30px;
+           width:220px;
+           display:inline-block;
+           padding-top:1vw;
+           transition: all 0.4s;
+           text-align:center;
+           font-size:15px;
+           
+       }
+       .button:hover{
+           box-shadow: 0px 9px 10px black;
+           transform:translateY(-3px);
+           background-color:goldenrod;
+       }
+       button{
+        border:2px solid green;
+        border-radius:15px;
+        width:60px;
+        height:40px;
+        margin-left:5px;
+
+       }
+       button:hover{
+           background-color: rgb(153, 153, 86);
+           transform:translateY(-2px);
+           box-shadow: 0px 4px 10px black;
+       }
+       
+    
+      @keyframes up{
+          0%{
+              opacity:0;
+              transform:translateY(-8vw)
+          }
+          100%{
+              opacity:1;
+              transform:translateY(0px);
+          }
+      }
+      @keyframes down{
+          0%{
+              opacity:0;
+              transform:translateY(10vw)
+          }
+          100%{
+              opacity:1;
+              transform:translateY(0px);
+          }
+      }
+      @keyframes magic{
+          0%{
+              opacity:0;
+              transform:translateX(-80px);
+              font-size:25px;
+              text-align:center;
+              color:black;
+          }
+          
+          50%{
+            opacity:1;
+              transform:translateX(0 px);
+              font-size:50px;
+              text-align:center;
+              color:rgb(110, 110, 9);
+
+          }
+          100%{
+            opacity:0;
+              transform:translateX(-80px);
+              font-size:25px;
+              text-align:center;
+          }
+      }
+      .sec{
+          float:left;
+          
+          height:500px;
+          width:280px;
+          border-radius:20px;
+          
+          margin:60px;
+          background-color:rgba(207, 187, 127, 0.473);
+          text-align:justify;
+          box-shadow: 6px 18px 20px black;
+          
+      }
+      .sec img{
+          height:200px;
+          width:280px;
+          border-radius:20px;
+          position:relative;
+          top:0.60px;
+          left:0.60px;
+      }
+       .special{
+           display:flex;
+           justify-content: center;
+           
+           margin-top:0 px;
+       }
+       span{
+           padding:10px;
+           color:blue;
+           display:inline-block;
+           width:190px;
+       }
+       .price{padding-top:30px;
+        color:rgb(238, 38, 38);
+        font-size:20px;
+        font-weight:bold;
+        display:inline-block;
+        width:25px;
+
+       }
+       .strike{
+           color:grey;
+           width:20px;
+       }
+       .save{
+           color:black;
+           width:120px;
+       }
+       .con{
+           text-align: justify;
+           padding:0px 10px;
+       }
+      #style:hover{
+        font-family:'Dancing Script', cursive;
+
+      }
+      #card1{
+          
+          animation:card1;
+          animation-duration: 2s;
+          animation-delay:0.6s;
+          animation-fill-mode: backwards;
+      }
+      #card3{
+          animation:card3;
+          animation-duration:2s;
+          animation-delay:0.6s;
+          animation-fill-mode: backwards;
+          
+      }
+
+      @keyframes card1{
+          0%{
+            position:relative;
+          left:400px;
+          }
+          100%{
+            position:relative;
+          left:0px;
+          }
+      }
+      @keyframes card3{
+          0%{
+            position:relative;
+          left:-400px;
+          }
+          100%{
+            position:relative;
+          left:0px;
+          }
+      }
+      .food{
+          text-align:center;
+          margin-top:20px;
+          animation: shadow 4s;
+          animation-iteration-count: infinite;
+      }
+      #food {font-size:40px;letter-spacing:4px;color:chocolate;width:100vw;}
+      .recommended{
+          text-align: justify;
+      }
+      .input{
+          
+          height:35px;
+          width:200px;
+          float:right;
+          
+          box-shadow:2px 12px  15px black;
+          position:relative;
+          top:-10px;
+          
+          font-size:20px;
+          border-radius:10px 0px 0px 10px;
+          background-color:rgba(165, 130, 15, 0.671);
+          color:black;
+          transition: background-color 1s;
+      }
+      .input:focus{
+          background-color: rgb(223, 152, 152);
+      }
+      ::placeholder{
+          color:black;
+          opacity:1;
+      }
+     #search:hover{
+        box-shadow:5px 14px  18px black;
+     }
+     #search:active{
+         transform:translateY(-1px);
+         box-shadow:0px 6px 6px black;
+     }
+     @keyframes shadow{
+         0%{
+            box-shadow:0px 2px 20px rgb(192, 4, 4);
+            border:2px solid rgb(192, 4, 4);
+         }
+         20%{
+            box-shadow:0px 2px 20px rgb(211, 85, 85);
+            border:2px solid rgb(211, 85, 85);
+         }
+         40%{
+            box-shadow:0px 2px 20px rgb(230, 130, 0);
+            border:2px solid rgb(230, 130, 0);
+         }
+         60%{
+            box-shadow:0px 2px 20px rgb(0, 255, 42);
+            border:2px solid rgb(0, 255, 42);
+         }
+         80%{
+            box-shadow:0px 2px 20px rgb(0, 255, 242);
+            border:2px solid rgb(0, 255, 242);
+         }
+         100%{
+            box-shadow:0px 2px 20px rgb(192, 4, 4); 
+            border:2px solid rgb(192, 4, 4);
+         }
+     }
+     #rect{
+         display:flex;
+         justify-content: center;
+     }
+     .recommended{
+         display:flex;
+         justify-content: center;
+         margin-top:0 px;
+     }
+     .rev {
+         height:90px;
+         border:2px solid #74b4a1;
+         border-radius:20px;
+         padding:20px;
+         margin:50px;
+         box-shadow: 4px 15px 10px black;
+         
+     }
+     #reviewsec{
+        border:2px solid orange;
+        box-shadow:20px 20px 20px rgb(212, 148, 29);
+        border-radius:20px;
+        margin: 0px auto;
+        width:80vw;
+        height:600px;
+        color:white;
+        font-weight:bold;
+        margin-top:200px;
+        margin-bottom:100px;
+     }
+    .rev img{
+        float:left;
+        width:120px;
+        height:130px;
+        border-radius: 20px;
+        
+       margin-left:20px;
+        transform:translateX(0px);
+        transform:translateY(40px);
+    }
+   
+     .form{
+         width:53vw;
+         margin:0px auto;
+         border: 3px dashed white;
+
+         height:460px;
+         
+
+     }
+     form p{
+         color:white;
+         margin-left:1vw;
+         margin-top:2px;
+         margin-bottom:2px;
+         
+     }
+     #submit:hover{
+      transform:translateY(-3px);
+     }
+     #submit:active{
+      transform:translateY(-1px);
+      
+     }
+     .link{
+         color:white;
+         text-decoration:none;
+         padding:4px;
+         margin-left:30px;
+         font-size:18px;
+     }
+.co:hover{ 
+    color:yellowgreen;
+
+}
+#top:hover{
+    color:yellowgreen;
+}
+#hemburger{
+              visibility: visible;
+          }
+          
+          #hemburger{
+              position:fixed;
+              width:40px;
+              height:40px;
+              border:4px solid green;
+              transform:translateX(85vw);
+              margin-top:15px;
+              visibility:hidden;
+              
+              
+          }
+          #hem{
+             width:35px;
+             height:4px;
+             background-color: #fff;
+             border-radius:100px;
+             position:relative;
+             top:18px;
+             left:2.5px;
+            
+          }
+          #hem1{
+             width:35px;
+             height:4px;
+             background-color: #fff;
+             border-radius:100px;
+             position:relative;
+             top:22px;
+             left:2.5px;}
+        #hem2{
+             width:35px;
+             height:4px;
+             background-color: #fff;
+             border-radius:100px;
+             position:relative;
+             top:2px;
+             left:2.5px;}
+.click:focus{
+background-color: rgb(68, 221, 68);
+}
+
+@media (min-width:1165px) and (max-width:1220px) {
+            li a{
+              
+              display:none;
+          }
+          #hemburger{
+              visibility:visible;
+          }
+}
+@media   (min-width:960px) and (max-width:1165px) {
+    .sec{
+        
+        height:450px;
+          width:250px;
+          margin:40px;
+    }
+    .sec img{
+          height:170px;
+          width:250px;}
+          .click{
+              float:right;
+              position:relative;
+              top:-50px;
+              right:2px;
+             
+          }
+          span{
+           padding:3px;
+           margin-left:5px;
+          }
+          .con{
+     clear:both;
+     position:relative;
+              top:-30px;
+          }
+          .price{
+      position:relative;
+      top:-60px;
+          }
+          .strike{
+            position:relative;
+      top:-60px;
+      padding-left:10px;
+          }
+          .save{
+            position:relative;
+      top:-60px;
+      padding-left:14px;
+          }
+          #content{
+              font-size:60px;
+              
+          }
+          #content:hover{
+              transform:scale(1.5);
+          }
+          #subtitle:hover{
+              transform:scale(1.5);
+          }
+          .input{
+          
+          height:35px;
+          width:18vw;}
+          .name{
+              position:relative;
+              top:-20px;
+          }
+          .revi{
+              position:relative;
+              top:-10px;
+          }
+          li a{
+              
+              display:none;
+          }
+          
+
+
+            #content:hover{
+              transform:scale(1.2);
+          }
+          #subtitle:hover{
+              transform:scale(1.2);
+          }
+          li a{
+              
+              display:none;
+          }
+          #hemburger{
+              visibility:visible;
+          }
+          #hemburger{
+              
+              left:60px !important;
+          }
+}
+         
+          @media (min-width:600px) and (max-width:960px)
+          {
+            li a{
+              
+              display:none;
+          }
+          #hemburger{
+              visibility:visible;
+          }
+          .special{
+              height:1750px;
+              width:100vw;
+              background-color: rgb(151, 151, 214);
+              background-position: right;
+              display:block;
+              
+          }
+          .rspecial{
+              height:1750px;
+          }
+          .c1{ 
+              margin-top:15px;
+              display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c2{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+       
+          }
+          .c3{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c4{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c5{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c6{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c7{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c8{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c9{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .rev{
+              width:250px;
+              height:200px;
+              display:block;
+              margin: 30px auto;
+          }
+        #reviewsec{
+            height:850px;
+            margin-top:60px;
+            margin-bottom:50px;
+            
+        }
+        #content:hover{
+              transform:scale(1.1);
+        }
+        #subtitle:hover{
+              transform:scale(1.1);
+          }
+          #grev{
+              font-size:20px !important;
+          }
+          #hemburger{
+              
+              left:30px !important;
+          }
+          }
+          @media  (min-width:438px) and (max-width:600px)
+          {
+            li a{
+              
+              display:none;
+          }
+          #hemburger{
+              visibility:visible;
+      
+          }
+          #hemburger{
+              visibility:visible;
+          }
+          .special{
+              height:1750px;
+              width:100vw;
+              background-color: rgb(151, 151, 214);
+              background-position: right;
+              display:block;
+              
+          }
+          .rspecial{
+              height:1750px;
+          }
+          .c1{ 
+              margin-top:15px;
+              display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c2{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+       
+          }
+          .c3{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c4{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c5{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c6{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c7{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c8{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c9{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+
+          }
+          .rev{
+              width:250px;
+              height:200px;
+              display:block;
+              margin: 30px auto;
+          }
+          #reviewsec{
+            height:850px;
+            margin-top:60px;
+            margin-bottom:50px;
+        }
+       #bcontent{
+          
+         width:70vw;
+         margin:auto;       }
+         #content{
+              font-size:50px;
+              
+              width:68vw;
+              letter-spacing:4px;
+              position:relative;
+              right:0px;
+              
+             
+          }
+          #subtitle{
+              font-size:18px;
+              text-align: center;
+              letter-spacing: 0px;
+
+
+              width:70vw;
+              
+          }
+          #content:hover{
+              transform:scale(1);
+          }
+         
+          #subtitle:hover{
+              transform:scale(1);
+          }
+          #food{
+              font-size: 30px;
+          }
+          #review{
+             font-size:50px !important;
+         }
+         #grev{
+              font-size:20px !important;
+          }
+          #logo img{
+              transform:translateX(-30px);
+          }
+          #hemburger{
+              
+              left:10px;
+          }
+          }
+         
+         
+         @media (max-width:438px)
+         {
+            li a{
+              
+              display:none;
+          }
+          #hemburger{
+              visibility:visible;
+      
+          }
+          #hemburger{
+              visibility:visible;
+          }
+            .special{
+              height:1750px;
+              width:100vw;
+              background-color: rgb(151, 151, 214);
+              background-position: right;
+              display:block;
+              
+          }
+          .rspecial{
+              height:1750px;
+          }
+          .c1{ 
+              margin-top:15px;
+              display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c2{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+       
+          }
+          .c3{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c4{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c5{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c6{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c7{
+            margin-top:15px;
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c8{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .c9{
+            display:block;
+              margin-right:50vw;
+              margin-left:50vw;
+              transform:translateX(-50%);
+              margin-bottom:18px;
+          }
+          .rev{
+              width:250px;
+              height:200px;
+              display:block;
+              margin: 30px auto;
+          }
+          #reviewsec{
+            height:850px;
+            margin-top:60px;
+            margin-bottom:50px;
+        }
+              #bcontent{
+          
+          width:70vw;
+          margin:auto;       }
+          #content{
+               font-size:40px;
+               
+               width:68vw;
+               letter-spacing:4px;
+               position:relative;
+               right:0px;
+               
+              
+           }
+           #subtitle{
+               font-size:12px;
+               text-align: center;
+               letter-spacing: 0px;
+ 
+ 
+               width:70vw;
+               
+           }
+           #content:hover{
+               transform:scale(1);
+           }
+          
+           #subtitle:hover{
+               transform:scale(1);
+           }
+           .button{
+           background-color:white;
+           color:black;
+           border-radius:100px;
+           height:20px;
+           width:160px;
+           display:inline-block;
+           padding-top:1vw;
+           transition: all 0.4s;
+           text-align:center;
+           font-size:12px;
+
+           
+       }
+       .sec{
+        
+        height:485px;
+          width:250px;
+         
+    }
+    .sec img{
+          height:170px;
+          width:250px;}
+          .click{
+              float:right;
+              position:relative;
+              top:-50px;
+              right:2px;
+             
+          }
+          span{
+           padding:3px;
+           margin-left:5px;
+          }
+          .con{
+     clear:both;
+     position:relative;
+              top:-30px;
+          }
+          .price{
+      position:relative;
+      top:-60px;
+          }
+          .strike{
+            position:relative;
+      top:-60px;
+      padding-left:10px;
+          }
+          .save{
+            position:relative;
+      top:-60px;
+      padding-left:14px;
+          }
+          #food{
+              font-size: 20px;
+          }
+          #foo{
+              font-size:18px !important;
+          }
+         #review{
+             font-size:30px !important;
+             letter-spacing: 4px  !important;
+         }
+         .rev{
+              width:180px !important;
+              height:295px !important;
+              display:block;
+              margin: 30px auto;
+          }
+          .rev img{
+            height:100px;
+            width:100px;
+          }
+          #reviewsec{
+margin-bottom:300px;
+height:1150px;
+margin-bottom:35px;
+          }
+          .revi{
+              float:right;
+          }
+          .bfoot{
+              height:1750px !important;
+              margin-bottom:0px !important;
+          }
+          .form{
+              height:410px;
+              width:60vw;
+
+          }
+          #grev{
+              font-size:14px !important;
+              margin-bottom:30px !important;
+              width:60vw !important;
+              position:relative;
+              right:1.8vw;
+          }
+          #style{
+              animation:none !important;
+              font-size:30px !important;
+              color:rgb(221, 167, 18);
+             margin:auto;
+              width:300px !important;
+              height: 35px !important;
+              
+              transform:translateX(-30vw);
+             
+          }
+          #logo img{
+              transform:translateX(-30px);
+          }
+          #hemburger{
+              
+              left:-10px;
+          }
+          #header{
+            
+            
+            background-size: 100% 90%;
+           
+            background-repeat:repeat-y;
+            height:750px;
+           
+        }
+        .name{
+            float:left;
+            position:relative;
+            top:-100px;
+            left:100px;
+        }
+        .revi{
+            position:relative;
+            top:-30px;
+        }
+       .field{
+           width:56vw !important;
+       }
+        
+          }
+           
+         
+         
+    </style>
+</head>
+<body>  
+        <a name="home"\>
+        <div id="header">
+        <div id="nav">
+            
+                <div id="logo"><img src="doc/logo3.png" style="background-size: 50px 100px;"></div>
+             <div id="menus">
+            <ul>
+                <li ><a href="#footer">CONTACT</a></li>
+                <li><a href="#review">REVIEW</a></li>
+                <li><a href="#rec">RECOMMENDED</a></li>
+                <li><a href="#special">SPECIAL</a></li>
+                <li style="padding-left:50vw;"><a href="#home">HOME</a></li>
+            </ul>
+           </div>
+          
+             <div id="hemburger">
+                 <div id="hem"></div>
+                 <div id="hem1"></div>
+                 <div id="hem2"></div>
+             </div>
+            
+           
+            </div>
+                <div  id="bcontent">
+                <div id="content">
+                    ETERNITY
+                </div>
+                <div id="subtitle">THE ENDLESS TIME IN HEAVEN</div>
+                <div style="text-align:center;">
+                <a class="button" href="#special" style="text-decoration:none">CHECK OUR SPECILITIES</a>
+            </div>
+        </div>
+      
+</div>
+<br>
+
+                                                       
+<a name="special" \>
+                <div style="text-align:justify;">
+                    <div id="bstyle"></div>
+                <p id="style" style="height:70px; text-align: center ;font-size:2.8vw; letter-spacing: 1.2vw;animation:magic 4s; animation-iteration-count:infinite;text-shadow: 2px 10px 8px black;position:relative;left:80px; margin-bottom:15px; box-sizing:border-box;width:100vw;margin-right:0px;">SPECIAL ITEMS</p> </div>
+                <p id="astyle" style=" font-family:'Dancing Script', cursive;color:rgb(245, 218, 14);text-align: center ;font-weight: bold;font-size:23px; background-color: rgb(6, 6, 22);letter-spacing:6px;animation:down 2s;width:100vw;">FEEL THE FLAVOUR OF SPICES</p></div>
+                
+        <div class="special">
+            
+        <div class="sec c1" id="card1"><img src="doc/burger.jpg"> <p style="color:blue ;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>SALMON BURGER </span><button class="click">ADD</button> <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam quis, amet neque quos enim nesciunt recusandae assumenda tempora fugiat voluptatum incidunt totam maxime voluptate possimus numquam sunt fugit quae suscipit sapiente?</p><br>
+         <span class="price">₹399</span><span class="strike"><s>₹500</s></span><span class="save">Save ₹100 (20%)</span>
+    </div>
+        <div class="sec c2"><img src="doc/pic1.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>SOM TAM</span><button class="click">ADD</button> <p class="con" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusantium sunt a voluptatem culpa repudiandae vero voluptas ipsum voluptates fuga eaque numquam, unde dolores eveniet magni consectetur earum, ratione nemo libero odio!</p><br><span class="price">₹899</span><span class="strike"><s>₹1199</s></span><span class="save">Save ₹300 (25%)</span></div>
+        <div class="sec c3" id="card3"><img src="doc/pic3.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>DETROIT PIZZA </span><button class="click">ADD</button> <p class="con"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere iusto iure rerum molestias, eveniet placeat sequi dignissimos minus? Consequatur corporis iusto maxime unde doloremque odit amet beatae quod sequi dolore. Voluptatem?</p><br><span class="price">₹999</span><span class="strike"><s>₹1500</s></span><span class="save">Save ₹500 (33%)</span></div>
+            
+    </div>
+    <a name="rec"\>
+        
+            <p class="food" id="food" >RECOMMENDED ITEMS</p>
+            <p class="food" id="foo" style="font-size:23px;width:100vw;">FESTIVAL OF FLAVOURS</p>
+            <br>
+            <button id="search"style="float:right;position:relative;top:-10px;margin-right:2.5vw;border-radius:0px;height:40px; box-shadow:3px 12px  15px black;margin-left:0px;border-left:0px solid black; border-radius:0px 10px 10px 0px;background-color:;"><img id="searchimg" src="doc/search.png" style="width:50px;height:35px;position:relative;top:0.7px;left:0.6px;border-radius:40px;"></button>
+            <form>
+                <input class="input" type="text" placeholder=" Search here..">
+
+            </form>
+            <br>
+            <br>
+            <div class="special rspecial" style="clear:both;">
+            
+        <div class="sec c4" id="card1"><img src="doc/new.jpg"> <p style="color:blue ;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>AYAM BAKAR </span><button class="click">ADD</button> <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam quis, amet neque quos enim nesciunt recusandae assumenda tempora fugiat voluptatum incidunt totam maxime voluptate possimus numquam sunt fugit quae suscipit sapiente?</p><br>
+         <span class="price">₹999</span><span class="strike"><s>₹1000</s></span><span class="save">Save ₹200(20%)</span>
+    </div>
+        <div class="sec c5"><img src="doc/pic2.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>SPRING ROLL</span><button class="click">ADD</button> <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusantium sunt a voluptatem culpa repudiandae vero voluptas ipsum voluptates fuga eaque numquam, unde dolores eveniet magni consectetur earum, ratione nemo libero odio!</p><br><span class="price">₹699</span><span class="strike"><s>₹933</s></span><span class="save">Save ₹233 (25%)</span></div>
+        <div class="sec c6" id="card3"><img src="doc/pic6.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>ADOBO</span><button class="click">ADD</button> <p class="con"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere iusto iure rerum molestias, eveniet placeat sequi dignissimos minus? Consequatur corporis iusto maxime unde doloremque odit amet beatae quod sequi dolore. Voluptatem?</p><br><span class="price">₹599</span><span class="strike"><s>₹800</s></span><span class="save">Save ₹200 (25%)</span></div>
+            
+    </div>
+    <div class="special rspecial" style="clear:both;">
+            
+        <div class="sec c7" id="card1"><img src="doc/pastry.jpg"> <p style="color:blue ;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>CHOCOLATE PASTRY </span><button class="click">ADD</button> <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam quis, amet neque quos enim nesciunt recusandae assumenda tempora fugiat voluptatum incidunt totam maxime voluptate possimus numquam sunt fugit quae suscipit sapiente?</p><br>
+         <span class="price">₹199</span><span class="strike"><s>₹303</s></span><span class="save">Save ₹104 (33%)</span>
+    </div>
+        <div class="sec c8"><img src="doc/pic8.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>RISOTTO</span><button class="click">ADD</button> <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat accusantium sunt a voluptatem culpa repudiandae vero voluptas ipsum voluptates fuga eaque numquam, unde dolores eveniet magni consectetur earum, ratione nemo libero odio!</p><br><span class="price">₹799</span><span class="strike"><s>₹1142</s></span><span class="save">Save ₹342 (30%)</span></div>
+        <div class="sec c9" id="card3"><img src="doc/pic7.jpg"><p style="color:blue;font-size:12px;padding: 4px 0px 16px 10px;">FOOD</p><span>SOBA NOODLES </span><button class="click">ADD</button> <p class="con"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere iusto iure rerum molestias, eveniet placeat sequi dignissimos minus? Consequatur corporis iusto maxime unde doloremque odit amet beatae quod sequi dolore. Voluptatem?</p><br><span class="price">₹999</span><span class="strike"><s>₹1500</s></span><span class="save">Save ₹500 (33%)</span></div>
+            
+    </div>
+              <a name="review"\></a>
+              <div class="bfoot" style="background-image: linear-gradient( to right bottom,rgba(0,0,0,0.8), rgba(0,0,0,0.9)),url(doc/cover4.jpg); background-size:100vw 200vh;background-position:top;height:1550px;width:100vw;margin-bottom: 0px;">
+     <p id="review"style="font-family: 'Alex Brush', cursive;color:white;text-weight:bold;text-align:center;font-size:70px;letter-spacing:14px;width:100vw">REVIEW</p>
+     <div id="reviewsec" >
+     <div class="rev"><img src="doc/man.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">HARRY </p><p class="revi">Lor dolor sit amet, consectetur adipisicing elit. Numquam eligendi quaerat qui cupiditate, esse ex officia. Voluptatibus vero quod cumque sint quam dolorum officiis fdfd lkhbbnjkkk!</p></div>
+    <div class="rev"><img src="doc/man1.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">JACK</p><p class="revi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, sit commodi culpa a, sed minus harum cupiditate adipisci placeat accusantium voluptas ullam laborum, corporis.</p></div>
+    <div class="rev" ><img src="doc/man2.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">MARCO</p ><p class="revi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi expedita, cum corporis quis ea ducimus? Placeat officia facere omnis alias voluptas quisquam ullam dicta sbh.</p></div>
+</div>
+<div class="form">
+    <p id="grev" style="color:rgb(198, 201, 42);text-align:center;font-size:2.5vw;margin-bottom:70px;" >
+        GIVE YOUR REVIEW
+    </p>
+    <form >
+        <p>NAME*</p>
+        
+        <input class="field" type="name" placeholder="ENTER YOUR NAME..."style="color:black;margin-left:1vw;height:20px;width:50vw;text-align:left;margin-bottom:10px;border:2px solid yellow;">
+        
+        <p>PHONE</p>
+        <input class="field" type="number" placeholder="ENTER YOUR NUMBER..."style="margin-left:1vw;height:20px;width:50vw;text-align:left;margin-bottom:10px;border:2px solid yellow;">
+        <br>
+        <p>EMAIL-ID*</p>
+        <input  class="field"type="email" placeholder="ENTER YOUR EMAIL ID..."style="margin-left:1vw;height:20px;width:50vw;text-align:left;margin-bottom:10px;border:2px solid yellow;">
+       <br>
+       
+        <p>COMMENT*</p>
+        <textarea class="field" rows="4" column="50" placeholder="ENTER YOUR REVIEW..."style="clear:both;width:50vw;text-align:left;font-size:17px;display:block;margin-left:1vw;margin-bottom:10px;border:2px solid yellow;"></textarea>
+        <input id="submit" type="submit" placeholder="SUBMIT"style="float:right;margin-right:2vw;height:40px;width:70px;text-align:center;background-color:rgb(153, 153, 86);text-color:white;border:2px solid yellow;box-shadow:0px 5px 20px yellow;margin-top:10px;">
+    </form>
+</div>
+
+
+</div>
+<a name="footer"\>
+    <div id="foot"style="background-color:rgb(6, 6, 22);height:360px;width:100vw;">
+        <p class="link"style="font-size:30px;">Quick Links</p>
+        <p><a href="" target="_blank" class="link co">About Us</a></p>
+        <p><a href="" target="_blank" class="link co">Terms and Conditions</a></p>
+        <p><a href="" target="_blank" class="link co">Private Policy</a></p>
+        <p><a href="" target="_blank" class="link co">Contact Us</a></p>
+        
+
+        <p class="link"style="font-size:30px;margin-top:20px;">Contact Us</p>
+        
+        <a href="" target="_blank" style="position:relative;top:70px;left:80px;"><img class="pic" src="doc/fac.svg" style="width:40px;height:40px;background-color: blue;position:relative;"></a>
+       <a href="" target="_blank" style="position:relative;top:70px;left:90px;"> <img  class="pic"src="doc/tei.svg" style="width:40px;height:40px;background-color: blue;"></a>
+       <a href="" target="_blank"  style="position:relative;top:70px;left:100px;"><img  class="pic"src="doc/in.svg" style="width:40px;height:40px;background-color: blue;"></a>
+       <a href="" target="_blank"  style="position:relative;top:70px;left:110px;"><img class="pic" src="doc/ins.svg" style="width:40px;height:40px;background-color: blue;"></a>
+        <p style="color:white;text-align:center;font-size:18px;padding:20px;">©Ankit Garg.All Rights Reserved</p>
+        <a id="top" href="#home" style=" display:block;background-color: white;text-decoration:none;padding:8px;width:140px;text-align:center;margin:0px auto;">BACK TO TOP</a>
+</div>
+
+    
+</body>
+
+</html>
