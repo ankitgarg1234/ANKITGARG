@@ -43,7 +43,7 @@
          }  
         
          #logo{
-             float:left;
+            
              position:fixed;
              
              height:120px;
@@ -65,7 +65,7 @@
         }
        #menus{
         background-color: rgba(0,0,0,0.4);
-        float:left;
+        
         position:fixed;
         width:100vw;
            height:80px;
@@ -88,7 +88,7 @@
            
            
        }
-       li a{
+      ul li a{
         text-decoration:none;
         color:white;
         transition:all 0.2s;
@@ -470,9 +470,7 @@
 #top:hover{
     color:yellowgreen;
 }
-#hemburger{
-              visibility: visible;
-          }
+
           
           #hemburger{
               position:fixed;
@@ -514,20 +512,70 @@
 .click:focus{
 background-color: rgb(68, 221, 68);
 }
-
+#hammenu{
+               position:fixed;
+               width:220px;
+               height:200px;
+               background-color:white;
+              top:15px;
+              right:10px;
+              visibility:hidden;
+           }
+           #hammenu li{
+           
+            width:220px;
+             list-style: none;
+             background-color:rgba(0,0,0,1);
+             padding:10px;
+             border:1px solid white;
+             box-sizing:border-box;
+           }
+           #hammenu li a{
+               color:aquamarine;
+               text-decoration:none;
+           }
+           #check{
+               visibility: hidden;
+           }
+         #check:checked ~ #hammenu{
+        visibility:visible;
+         }
+          #hammenu li:hover{
+              background-color: rgb(151, 204, 28);
+          }
+          #hammenu li a{
+            display:block;
+            width:200px;
+           
+          }
+          #hammenu li:hover>a{
+              color:white;
+              
+             
+          }
+        
+          #check:checked ~ label #hemburger {
+          visibility:hidden;
+          }
+         
 @media (min-width:1165px) and (max-width:1220px) {
-            li a{
+   
+           ul li a{
               
               display:none;
           }
           #hemburger{
               visibility:visible;
+              top:-1px;
+              left:40px;
           }
 }
 @media   (min-width:960px) and (max-width:1165px) {
+   
     .sec{
+         
+        height:485px;
         
-        height:450px;
           width:250px;
           margin:40px;
     }
@@ -586,7 +634,7 @@ background-color: rgb(68, 221, 68);
               position:relative;
               top:-10px;
           }
-          li a{
+         ul li a{
               
               display:none;
           }
@@ -599,22 +647,38 @@ background-color: rgb(68, 221, 68);
           #subtitle:hover{
               transform:scale(1.2);
           }
-          li a{
+         ul li a{
               
               display:none;
           }
           #hemburger{
               visibility:visible;
+             left:30px;
+             top:-3px !important;
+
           }
-          #hemburger{
-              
-              left:60px !important;
+          .price{
+      position:relative;
+      top:-45px;
+      
+          }
+          .strike{
+            position:relative;
+      top:-45px;
+      padding-left:13px;
+          }
+          .save{
+            position:relative;
+      top:-45px;
+      padding-left:16px;
           }
 }
          
           @media (min-width:600px) and (max-width:960px)
           {
-            li a{
+           
+       
+           ul li a{
               
               display:none;
           }
@@ -722,22 +786,36 @@ background-color: rgb(68, 221, 68);
           }
           #hemburger{
               
-              left:30px !important;
+              left:25px !important;
+              top:-3px;
+          }
+          .price{
+      position:relative;
+      top:-30px;
+      
+          }
+          .strike{
+            position:relative;
+      top:-30px;
+      padding-left:13px;
+          }
+          .save{
+            position:relative;
+      top:-30px;
+      padding-left:16px;
           }
           }
           @media  (min-width:438px) and (max-width:600px)
           {
-            li a{
+           ul li a{
               
               display:none;
           }
           #hemburger{
               visibility:visible;
-      
+              top:3px;
           }
-          #hemburger{
-              visibility:visible;
-          }
+         
           .special{
               height:1750px;
               width:100vw;
@@ -874,6 +952,20 @@ background-color: rgb(68, 221, 68);
               
               left:10px;
           }
+          .price{
+      position:relative;
+      top:-30px;
+          }
+          .strike{
+            position:relative;
+      top:-30px;
+      padding-left:13px;
+          }
+          .save{
+            position:relative;
+      top:-30px;
+      padding-left:16px;
+          }
           }
          
          
@@ -885,6 +977,7 @@ background-color: rgb(68, 221, 68);
           }
           #hemburger{
               visibility:visible;
+              top:3px;
       
           }
           #hemburger{
@@ -1055,12 +1148,12 @@ background-color: rgb(68, 221, 68);
           .strike{
             position:relative;
       top:-60px;
-      padding-left:10px;
+      padding-left:13px;
           }
           .save{
             position:relative;
       top:-60px;
-      padding-left:14px;
+      padding-left:16px;
           }
           #food{
               font-size: 20px;
@@ -1148,9 +1241,7 @@ margin-bottom:35px;
        }
         
           }
-           
-         
-         
+          
     </style>
 </head>
 <body>  
@@ -1168,15 +1259,30 @@ margin-bottom:35px;
                 <li style="padding-left:50vw;"><a href="#home">HOME</a></li>
             </ul>
            </div>
-          
-             <div id="hemburger">
-                 <div id="hem"></div>
-                 <div id="hem1"></div>
-                 <div id="hem2"></div>
-             </div>
-            
            
+            
+           <input type="checkbox" id="check">
+           <label id="labl" for="check">
+               <div id="hemburger">
+                   <div id="hem"></div>
+                   <div id="hem1"></div>
+                   <div id="hem2"></div>
+
+               </div>
+           </label>
+           <div id="hammenu">
+            
+            <label id="cut" for="check">
+            <li  style="color:white;text-align:center;height:40px;">BACK</li></label>
+            <li ><a href="#home">HOME</a></li>
+            <li><a href="#special">SPECIAL</a></li>
+            <li><a href="#rec">RECOMMENDED</a></li>
+            <li><a href="#review">REVIEW</a></li>
+            <li ><a href="#footer">CONTACT</a></li></div>
+            
+
             </div>
+            
                 <div  id="bcontent">
                 <div id="content">
                     ETERNITY
@@ -1240,8 +1346,8 @@ margin-bottom:35px;
               <div class="bfoot" style="background-image: linear-gradient( to right bottom,rgba(0,0,0,0.8), rgba(0,0,0,0.9)),url(doc/cover4.jpg); background-size:100vw 200vh;background-position:top;height:1550px;width:100vw;margin-bottom: 0px;">
      <p id="review"style="font-family: 'Alex Brush', cursive;color:white;text-weight:bold;text-align:center;font-size:70px;letter-spacing:14px;width:100vw">REVIEW</p>
      <div id="reviewsec" >
-     <div class="rev"><img src="doc/man.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">HARRY </p><p class="revi">Lor dolor sit amet, consectetur adipisicing elit. Numquam eligendi quaerat qui cupiditate, esse ex officia. Voluptatibus vero quod cumque sint quam dolorum officiis fdfd lkhbbnjkkk!</p></div>
-    <div class="rev"><img src="doc/man1.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">JACK</p><p class="revi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, sit commodi culpa a, sed minus harum cupiditate adipisci placeat accusantium voluptas ullam laborum, corporis.</p></div>
+     <div class="rev"><img src="doc/man.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">HARRY </p><p class="revi">Lor dolor sit amet, consectetur adipisicing elit. Numquam eligendi quaerat qui cupiditate, esse ex officia. Voluptatibus vero quod cumque sint quam dolorum officiis fdfd!</p></div>
+    <div class="rev"><img src="doc/man1.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">JACK</p><p class="revi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, sit commodi culpa a, sed minus harum cupiditate adipisci placeat accusantium voluptas ullam laborum.</p></div>
     <div class="rev" ><img src="doc/man2.png"><p class="name" style="color:blue;padding:10px;font-size:18px;">MARCO</p ><p class="revi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi expedita, cum corporis quis ea ducimus? Placeat officia facere omnis alias voluptas quisquam ullam dicta sbh.</p></div>
 </div>
 <div class="form">
